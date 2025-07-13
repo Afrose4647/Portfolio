@@ -1,6 +1,45 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar{
   position:fixed;
 }
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  margin-right: 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Add this in your port.css */
+.home {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.home .container-fluid {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 100px 30px;
+}
+.skill-card:hover, .card:hover {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+}
+
 .img-fluid{
     width: 250px;
     height:100%;
@@ -9,9 +48,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 .home,.education,.skills-section,.projects{
-  background-image: url("images/portfoliobg.jpeg");
   height:200%;
-  color:white;
   padding:30px;
 }
 .name{
@@ -21,15 +58,30 @@
   margin-top:10%;
   margin-left:40%;
 }
-.btn{
-  background-color:white;
-}
-.custom-hover:hover{
-  border:2px solid #007BFF;
-  background:black;
-  color :#007BFF;
+.btn {
+  background-color: white;
+  border: 2px solid #007BFF;
+  color: #007BFF;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
+.custom-hover:hover{
+  border:2px solid #007BFF !important ; 
+  background:black !important;
+  color :#007BFF !important;
+}
+.img-hover {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+.img-hover:hover{
+  border:2px solid #007BFF !important ; 
+  background:black !important;
+  color :#007BFF !important;
+  transform:scale(1.05);
+}
 .heading{
   margin-top:30px;
   margin-bottom:10px;
@@ -37,7 +89,7 @@
 .skills{
   border:2px solid black;
 }
-/*skills section*/\
+/*skills section*/
 .skills-section {
   padding: 50px 20px;
   background: #f9f9f9;
@@ -66,6 +118,7 @@
   width: 100%;
   max-width: 180px;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .skill-card i {
@@ -80,10 +133,10 @@
   color: #333;
 }
 
-.skill-card:hover {
+.skill-card:hover,.card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  background:black;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
   border:2px solid #007BFF;
 
 }
@@ -109,10 +162,4 @@
 }
 .projects{
   color:black;
-}
-.card:hover{
-  background:black;
-  color:#007BFF;
-  border:4px solid #007BFF;
-
 }
