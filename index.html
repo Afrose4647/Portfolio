@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="port.css"/>
   <link rel="stylesheet" href="bootstrap/bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- In your <head> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Before </body> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </head>
 <body>
 <!--Navbar----->
@@ -31,8 +39,8 @@
   </nav>
   
 <!--Home Section-->
-<section class="home" id="home">
-  <div class="container-fluid">
+<section class="home h-100" id="home">
+  <div class="container-fluid my-5">
     <div class="row align-items-center">
       <div class="col-md-4 col-lg-8 col-sm-8 text-md-start ms-3">
           <h2>Hello,</h2>
@@ -40,28 +48,28 @@
           <h4><span id="typed-role" class="badge btn-info"></span></h4>
           <p class="fw-bold text-justify mb-3">Motivated Computer Science Student with hands-on experience in Full-stack Web 
               development, database Management and E-commerce solutions.</p>
-              <a href="resume.pdf" class="btn custom-hover" download target="_blank">
+              <a href="resume.pdf" class="btn btn-primary custom-hover" download target="_blank">
                   <i class="fas fa-download"></i> Download Resume
               </a>
-              <a href="#contact" class="btn custom-hover">Contact Me</a>
+              <a href="mailto:smohamedafrose@gmail.com" class="btn btn-primary custom-hover">Contact Me</a>
         </div>
-      <div class="col-md-6 col-lg-4 col-sm-4 text-right">
-        <img class="img-fluid rounded-circle shadow" src="images/profilephoto1.jpeg.png">
+      <div class="col-md-6 col-lg-4 col-sm-4 text-right my-3">
+        <img class="img-fluid rounded-circle shadow img-hover" src="images/profilephoto1.jpeg.png">
       </div>
     </div>
   </div>
 </section>
 <!--Education section-->
-<section class="education" id="education">
+<section class="education my-5" id="education">
   <div class="container">
       <h2 class="section-title text-center">Education</h2>
 
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="row g-4">
+      <div class="col-6">
         <h2 class="heading text-left">Education</h2>
         <p class="text-justify">I had recently completed a Bachelor of Science in Computer Science at Alpha Arts and Science College, affiliated with the University of Madras. Through this program, I have developed a strong foundation in programming, web development, and database management. My coursework, combined with hands-on projects, has equipped me with the skills needed to solve real-world problems using modern technologies.</p>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6">
+      <div class="col-6">
         <h4 class="heading text-left fw-bold">Bachelor's Degree</h4>
         <h5 class="text-justify">Alpha arts ansd science college | <span class="badge btn-info">2022-2025</span></h5>
         <h4 class="heading text-left fw-bold">High School</h4>
@@ -109,8 +117,8 @@
     </div>
   </section>
 <!--Project Section--------->
-<section id="projects" class="projects">
-    <div class="container">
+<section id="projects" class="projects ">
+    <div class="container my-5">
         <h2 class="section-title text-center">Projects</h2>
         <div class="row">
   
@@ -122,7 +130,7 @@
             <div class="card-body">
               <h5 class="card-title">E-commerce for Clothing</h5>
               <p class="card-text">A full-featured eCommerce platform for thrift fashion with Razorpay integration.</p>
-              <a href="#" class="btn btn-primary">View Project</a>
+              <a href="https://madzthriftz.pythonanywhere.com" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
